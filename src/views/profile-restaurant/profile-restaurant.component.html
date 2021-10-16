@@ -1,6 +1,11 @@
 <div class="layout">
     <div class="banner">
         <div class="icon-photo">
+          <input type="file" id="file" accept="image/*" (change)="onSelectFile($event)"  (change)="handleFileInput($event)"/>
+          <label class="p-file" for="file">
+            <i class="material-icons"> add_photo_alternate </i>&nbsp;
+          </label>
+          <img [src]="url">
         </div>
     </div>
     <div class="plates-layout">
@@ -13,7 +18,7 @@
                 <span class="nome-marmita">Nome da Marmita</span>
                 <span class="preco-marmita">Preço</span>
                 <div class="descricao-marmita">
-                    
+
                 </div>
             </div>
             <div class="buttons">

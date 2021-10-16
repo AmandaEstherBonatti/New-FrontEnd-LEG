@@ -1,3 +1,5 @@
+import { Photo } from "./photo";
+
 export class Restaurant {
   userId: number = 0;
   userName: string = '';
@@ -8,4 +10,5 @@ export class Restaurant {
   cnpj: string = '';
   openTime: string = '';
   closeTime: string = '';
+  photos: Photo[] = [];
 }
